@@ -4,6 +4,7 @@
 # Do it in place.
 
 def URLify(s, length):
+    s = list(s)
     new_length = length
     for i in range(len(s)):
         if s[i] == ' ':
@@ -19,3 +20,4 @@ def URLify(s, length):
         else:
             s[new_length-1] = s[i]
             new_length -= 1
+     return ''.join(s)
